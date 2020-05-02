@@ -7,17 +7,16 @@ second parameter is number of level, which discretizes state into different leve
 of epsisode. \
 For example
 ```
-python run_this.py ^GSPC 5 6 2
+python run_this.py ^GSPC 5 6 2000
 ```
 
 #Method 2: Policy Gradient
 # Running code
 Usage of code: you can define paramter as you want. The first parameter is size of sliding windows in time; \
-second parameter is number of level, which discretizes state into different levels; third parameter is number \
-of epsisode. \
+second parameter is number of epsisode. \
 For example
 ```
-python run_this_pg.py ^GSPC 5 6 2
+python run_this_pg.py ^GSPC 5 2000
 ```
 
 
