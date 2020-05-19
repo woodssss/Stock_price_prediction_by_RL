@@ -21,8 +21,7 @@ python run_this_pg.py ^^GSPC 5 2000
 ```
 
 # Recent update
-## Method 3: Policy Gradient
-## Running code
+## Method 3: Policy Gradient and run code
 Usage of code: you can define paramter as you want. The first parameter is size of sliding windows in time; \
 second parameter is number of epsisode. \
 For example
