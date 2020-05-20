@@ -9,9 +9,16 @@ For example
 ```
 python run_this.py ^^GSPC 5 6 2000
 ```
+# Method 2: DQN
+# Running code
+Usage of code: you can define paramter as you want. The first parameter is size of sliding windows in time; \
+second parameter is number of epsisode. \
+For example
+```
+python run_this_dqn.py ^^GSPC 5 2000
+```
 
-
-# Method 2: Policy Gradient
+# Method 3: Policy Gradient
 # Running code
 Usage of code: you can define paramter as you want. The first parameter is size of sliding windows in time; \
 second parameter is number of epsisode. \
@@ -21,7 +28,7 @@ python run_this_pg.py ^^GSPC 5 2000
 ```
 
 # Recent update
-## Method 3: Policy Gradient and run code
+## Method 4: Actor Critic and run code
 Usage of code: you can define paramter as you want. The first parameter is size of sliding windows in time; \
 second parameter is number of epsisode. \
 For example
