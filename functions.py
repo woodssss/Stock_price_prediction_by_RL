@@ -18,6 +18,11 @@ def sigmoid(x):
 
 def get_state(data, wd, t):
     st = t-wd
+    block = data[st:t]
+    return np.array(block)
+
+def get_state_tuple(data, wd, t):
+    st = t-wd
     done = 'True' if t==len(data)-1 else 'False'
     block = data[st:t]
     block = np.append(block, done)

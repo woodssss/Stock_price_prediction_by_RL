@@ -14,13 +14,13 @@ RL = QLearningtable(actions)
 start_time = windows_size
 
 for i in range(e_num):
-    state = get_state(data_lvl, windows_size, start_time)
+    state = get_state_tuple(data_lvl, windows_size, start_time)
     total_profit = 0
     RL.buyrecord = []
 
     for t in range(start_time,len(data_lvl)):
         action = RL.act(state)
-        sp = get_state(data_lvl, windows_size, t)
+        sp = get_state_tuple(data_lvl, windows_size, t)
         reward = 0
         if action == 1: #buy
             RL.buyrecord.append(data[t])
@@ -38,7 +38,7 @@ buy_time = [i for i in range(start_time,len(data_lvl))]
 sell_time = [i for i in range(start_time,len(data_lvl))]
 agent_action = []
 for t in range(start_time,len(data_lvl)):
-    s = get_state(data_lvl, windows_size, t)
+    s = get_state_tuple(data_lvl, windows_size, t)
     temp_action = RL.act(s)
     agent_action.append(temp_action)
 buy_action = data[start_time:].copy()
